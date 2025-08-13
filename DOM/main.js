@@ -23,3 +23,15 @@ boton2.innerText="no peligro";
 
 document.body.appendChild(boton);
 document.body.appendChild(boton2);
+
+//eventos en javascript con botones
+//window.location.href="index.html"; se utilisa para crear un html dentro de un html
+boton.addEventListener("click",()=>{
+    peligro= false;
+    recordando= spiderman(peligro);
+    window.location.href="index.html";
+    document.body.innerHTML=`
+    <h1>${recordando}</h1>
+    <button id = 'boton2'><a href='idex.html'>volver</a></button>
+    `;
+});
