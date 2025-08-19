@@ -35,12 +35,16 @@ boton.addEventListener("click",()=>{
     <button id = 'boton'><a href='idex.html'>volver</a></button>
     `;
 });
-boton2.addEventListener("click",()=>{
-    no-peligro = false;
-    recordando= spiderman(no-peligro);
-    window.location.href="index.html";
-    document.body.innerHTML=`
-    <h1>${recordando}</h1>
-    <button id = 'boton2'><a href='idex.html'>volver</a></button>
-    `;
+boton2.addEventListener("click", () => {
+    const noPeligro = "algún valor"; // Debes definir qué es esto
+    const recordando = algunaFuncion(noPeligro); // Reemplaza 'algunaFuncion' con tu lógica
+    
+    // Si quieres redireccionar, esto recargará la página
+    window.location.href = "index.html";
+    
+    // Pero esto no tendrá efecto porque la página se recargará
+    document.body.innerHTML = `
+        <h1>${recordando}</h1>
+        <button id='boton2'><a href='index.html'>volver</a></button>
+            `;
 });
